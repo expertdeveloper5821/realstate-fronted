@@ -1,0 +1,29 @@
+.backgroundimage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bannerbox{
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+}
+.firstbannerbox{
+    flex: 0 1 38%
+}
+.secondbannerbox{
+    flex:0 1 58%;
+    text-align: center;
+}
+.bannerHeading{
+    font-size: 30px;
+    font-weight: 700;
+}
+.bannerPara{
+    font-size: 20px;
+}
+@media only screen and (max-width: 992px) {
+    .backgroundimage{
+        flex-direction: column;
+    }
+}

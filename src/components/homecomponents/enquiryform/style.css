@@ -1,0 +1,12 @@
+.input-box-enquiry{
+ width: 500px;
+ margin: 20px 0px;
+ border: none;
+}
+.btn-enquiry{
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+.enquiry-heading{
+    font-size: 30px;
+}

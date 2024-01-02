@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+.div_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.brand_name {
+  width: 130px;
+}
+.nav_bar_img {
+  width: 25px;
+  cursor: pointer;
+}
+.navlogo {
+  display: flex;
+  gap: 20px;
+}
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  display: none;
+  border: none;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+.nav-new-logo {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-btn {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transition: 0.8s;
+    transform: translateY(-100vh);
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 20px;
+  }
+  .mobile_responsive {
+    transform: none;
+  }
+  .navlogo {
+    display: none;
+  }
+  .brand_name {
+    width: 100px;
+  }
+  header {
+    padding: 8px 20px;
+  }
+  .nav-close-btn {
+    color: black;
+    position: fixed;
+    top: 13px;
+    right: 16px;
+  }
+}
+
+.anqr {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  color: white;
+  text-decoration: none;
+  /* margin-top: 20px; */
+}
+
+.anqr {
+  position: relative;
+  color: gray;
+}
+
+.anqr::after {
+  content: "";
+  position: absolute;
+  background-color: #003554;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.5s;
+}
+
+.anqr:hover {
+  color: #003554;
+}
+.anqr:hover::after {
+  width: 100%;
+}
+/* Your existing styles */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -26px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; 
+  padding: 10px;
+  min-width: 180px;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  transition: background-color 0.3s; 
+}
+
+.dropdown-content a:hover {
+  z-index: 9999;
+  background-color: lightgrey;
+  top: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+

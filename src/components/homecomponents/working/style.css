@@ -28,3 +28,11 @@
     margin: 0 auto;
     padding: 0 30px;
   }
+  @media only screen and (max-width: 992px) {
+   .working-div{
+    flex-direction: column;
+   } 
+   .working-box{
+    border: none;
+   }
+  }

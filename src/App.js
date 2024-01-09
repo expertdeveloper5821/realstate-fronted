@@ -5,7 +5,9 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home';
 import AddProperties from './pages/AddProperties';
-import Properties from './pages/Properties'
+import ShowDetails from './components/showDetails/ShowDetails';
+import Properties from './pages/Properties';
+// import Properties from './pages/Properties'
 function App() {
   return (
     <>
@@ -15,8 +17,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/Home' element={<Home/>}/>
         <Route path='/AddProperties' element={<AddProperties/>}/>
-        <Route path='/Properties' />
-        <Route />
+        <Route path='/product/:id' element={<ShowDetails/>}/>
+        <Route path='/properties' element={<Properties/>} />
       </Routes>
     <Footer/>
     </BrowserRouter>

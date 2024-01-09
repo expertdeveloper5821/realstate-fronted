@@ -1,0 +1,12 @@
+.show-details-box{
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 48%;
+  justify-content: space-evenly;
+  padding: 16px;
+}
+.show-details-btn{
+  border: 2px solid black;
+  padding: 6px 10px;
+  background: gainsboro;
+}

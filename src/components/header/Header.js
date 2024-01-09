@@ -29,7 +29,7 @@ function Header() {
               <Link to="#">Contact Us</Link>
             </div>
           </ul>
-          <Link className="anqr" to="#">
+          <Link className="anqr" to="/properties">
             Properties
           </Link>
           <Link className="anqr" to="/AddProperties">

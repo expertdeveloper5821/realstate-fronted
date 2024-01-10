@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import { useRef } from "react";
-// import {FaBars,FaTimes} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
@@ -18,7 +17,7 @@ function Header() {
           <img className="brand_name" src={logo} alt="logo" />
         </div>
         <nav ref={navRef}>
-          <Link className="anqr" to="/Home">
+          <Link className="anqr" to="/">
             Home
           </Link>
           <ul className="anqr dropdown" to="#">

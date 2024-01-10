@@ -21,7 +21,7 @@ export const products = [
     },
     {
       id: 2,
-      name: "Nomad Tumbler",
+      name: "Nomad Tumbler",  
       href: "#",
       price: "$35",
       imageSrc:

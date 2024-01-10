@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import Input from "../../input/Input";
-// import { FaSearch } from "react-icons/fa";
 const FilterSection = () => {
   return (
     <>
@@ -15,7 +14,7 @@ const FilterSection = () => {
             />
           </div>
           <div>
-            <label for="" className="location-label"> Type: </label>
+            <label for="" className="location-label"> Type </label>
             <select className="form-select" id="rooms">
               <option value="Choose">Choose</option>
               <option value="Rent">Rent</option>
@@ -24,7 +23,7 @@ const FilterSection = () => {
             </select>
           </div>
           <div>
-            <label for="" className="location-label"> Category: </label>
+            <label for="" className="location-label"> Category </label>
             <select className="form-control" id="Adult" >
               <option className="optn">Choose Category </option>
               <option className="optn" value="1">Appartments </option>

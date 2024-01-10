@@ -3,17 +3,17 @@ import "./style.css";
 import Button from "../../button/Button";
 import { Link } from "react-router-dom";
 import {products} from "../../../../src/mock"
-function List() {
+function List({startslice,endslice,showButton}) {
   return (
     <>
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="sr-only">Products</h2>
+          {/* <h2 className="sr-only">Products</h2> */}
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
-      {products.slice(0, 6).map((product) => (
+      {products.slice(startslice, endslice).map((product) => (
         <Link
           key={product.id}
-          to={{ pathname: `/product/${product.id}`, state: { product } }}
+          to={`/product/${product.id}`}
           className="group relative"
         >
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-5 xl:aspect-w-7">
@@ -34,9 +34,11 @@ function List() {
       ))}
     </div>
         </div>
-        <div className="btn-div">
-          <Button type="text" text="Show more Properties" className="btn-list" />
-        </div>
+        {showButton && (
+          <div className="btn-div">
+            <Button type="text" text="Show more Properties" className="btn-list" />
+          </div>
+        )}
       </div>
     </>
   );

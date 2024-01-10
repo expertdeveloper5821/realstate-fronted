@@ -15,8 +15,8 @@ function EnquiryForm() {
                 <h2 className='enquiry-heading'>Enquiry</h2>
                 <p>sdfghjk ksuhaf djf djskj slkjf sdjfs skfjhask skdjfs sdjf sddkfhe sdl;jf djfjd dfjnhf</p>
                 <input type="text" placeholder='Your Name' className="input-box-enquiry"/><br/>
-                <input type="text" placeholder='Your Email' className="input-box-enquiry"/><br/>
-                <input type="text" placeholder='Your Phone no.' className="input-box-enquiry"/><br/>
+                <input type="email" placeholder='Your Email' className="input-box-enquiry"/><br/>
+                <input type="number" placeholder='Your Phone no.' className="input-box-enquiry"/><br/>
                 <Button text="Make an enquiry" className="btn-enquiry"/>
             </from>
         </div>

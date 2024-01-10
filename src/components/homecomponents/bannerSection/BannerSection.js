@@ -10,7 +10,7 @@ function BannerSection({heading,para}) {
             <p className='bannerPara'>{para}</p>
       </div>
       <div className='bannerbox secondbannerbox'>
-            
+      
       </div>
       </div>
     </>

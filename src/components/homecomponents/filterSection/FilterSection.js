@@ -6,7 +6,7 @@ const FilterSection = () => {
     <>
       <form className="filter bg">
           <div>
-            <label for="" className="location-label">Location : </label>
+            <label for="" className="location-label">Location </label>
             <Input
               className="form-control"
               type="text"

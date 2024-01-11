@@ -20,14 +20,14 @@ function Header() {
           <Link className="anqr" to="/">
             Home
           </Link>
-          <ul className="anqr dropdown" to="#">
+          <div className="anqr dropdown" to="#">
             Pages
             <div className="dropdown-content">
               <Link  to="#">About Us</Link>
               <hr/>
               <Link to="#">Contact Us</Link>
             </div>
-          </ul>
+          </div>
           <Link className="anqr" to="/properties">
             Properties
           </Link>

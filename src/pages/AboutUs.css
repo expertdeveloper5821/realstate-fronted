@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgb(194 237 248 / 45%);
-    /* height: 250px; */
      padding: 30px;
 }
 
@@ -11,12 +10,15 @@
     text-align: center;
 }
 .about-us-text{
-    /* font-size: 50px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-weight: 700;
     display: flex;
     align-items: flex-start;
     padding-left: 50px ;
+    height: 80vh;
 }
 
 .about-us-text {

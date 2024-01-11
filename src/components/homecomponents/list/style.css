@@ -8,3 +8,30 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.overlay-icons {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initially position it outside the container to the left */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.3s ease, opacity 0.5s ease; /* Transition left and opacity properties */
+    opacity: 0; /* Initially set opacity to 0 */
+  }
+  .icon {
+    margin-top: 20px;
+    color: rgb(2, 2, 2);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 2px 8px 2px 30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.77);
+    transform: translateX(-200px); /* Initially position the icons outside the container to the left */
+    transition: transform 0.8s ease; /* Transition transform property */
+  }
+  .group:hover .icon {
+    transform: translateX(-180px); /* Move the icons to their original position when hovering */
+  }
+  

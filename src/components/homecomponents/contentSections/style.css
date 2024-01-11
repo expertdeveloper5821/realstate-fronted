@@ -1,0 +1,33 @@
+.contentsection-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+.contentsection-box1{
+    flex: 0 1 48%;
+}
+.contentsection-box2{
+    flex: 0 1 48%;
+}
+.contentSection-heading{
+    font-size: 30px;
+    font-weight: 700;
+}
+.contentSection-para{
+    font-size: 20px;
+}
+.btn-contentSection{
+    border: 2px solid black;
+    padding: 4px 10px;
+    margin-top: 20px;
+}
+.contentsection-div ul li{
+    font-size: 20px;
+    margin: 5px;
+}
+@media only screen and (max-width: 992px) {
+    .contentsection-div{
+        flex-direction: column;
+    }
+}

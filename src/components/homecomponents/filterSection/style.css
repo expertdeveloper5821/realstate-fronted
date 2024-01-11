@@ -1,0 +1,42 @@
+.filter {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 300px; */
+  /* justify-content: space-around; */
+}
+.location-label {
+  font-size: 20px;
+  width: 100%;
+}
+.bg {
+  background-color: lightgray;
+}
+
+.filter-btn {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  width: 280px;
+  background-color: black;
+}
+
+.form-select {
+    width: 280px;
+}
+.form-control{
+    width: 280px;
+}
+.search{
+    margin-top: 10px;
+    /* width: 20px; */
+}
+@media only screen and (max-width: 992px){
+    .filter{
+        flex-direction: column;
+    }
+    .filter-btn{
+        margin-top: 10px;
+    }
+}

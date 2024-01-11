@@ -1,0 +1,38 @@
+.working-div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.working-box{
+    flex:0 1 25%;
+    border-right: 1px solid black;
+    padding:10px 30px 10px 30px;
+}
+.main-div-workingsection{
+    padding: 10px 0px;
+}
+.workingsection-heading{
+    font-size: 38px;
+    font-weight: 700;
+}
+.subheading-workingSection{
+    font-size: 25px;
+    font-weight: 600;
+}
+.icons{
+    font-size: 45px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  @media only screen and (max-width: 992px) {
+   .working-div{
+    flex-direction: column;
+   } 
+   .working-box{
+    border: none;
+   }
+  }

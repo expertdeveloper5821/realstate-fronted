@@ -218,10 +218,10 @@ function AddProperties() {
       <div className="border-b border-gray-900/10 pb-12">
         <h2 className="text-base font-semibold leading-7 text-gray-900">Notifications</h2>
         <p className="mt-1 text-sm leading-6 text-gray-600">
-          We'll always let you know about important changes, but you pick what else you want to hear about.
+          We'll always let you know about important changes
         </p>
 
-        <div className="mt-10 space-y-10">
+        {/* <div className="mt-10 space-y-10">
           <fieldset>
             <legend className="text-sm font-semibold leading-6 text-gray-900">By Email</legend>
             <div className="mt-6 space-y-6">
@@ -314,7 +314,7 @@ function AddProperties() {
               </div>
             </div>
           </fieldset>
-        </div>
+        </div> */}
       </div>
     </div>
 

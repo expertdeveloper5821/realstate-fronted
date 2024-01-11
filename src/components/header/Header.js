@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import logo from "../../assets/logo/newlogo-removebg-preview.png";
+import logo from "../../assets/logo/logo.png";
 function Header() {
   const navRef = useRef();
   const showNavbar = () => {
@@ -24,9 +24,9 @@ function Header() {
           <ul className="anqr dropdown" to="#">
             Pages
             <div className="dropdown-content">
-              <Link  to="#">About Us</Link>
+              <Link  to="/AboutUs">About Us</Link>
               <hr/>
-              <Link to="#">Contact Us</Link>
+              <Link to="/ContactUs">Contact Us</Link>
             </div>
           </ul>
           <Link className="anqr" to="#">

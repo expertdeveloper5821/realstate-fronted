@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 // import footerBackGroundimg from "../../assets/images/29306105.jpg";
-import logo from "../../assets/logo/newlogo-removebg-preview.png";
+import logo from "../../assets/logo/logo.png";
 function Footer() {
   return (
     <>
@@ -48,10 +48,10 @@ function Footer() {
           </div>
           <div className="box">
             <h2 className="head">Links</h2>
-            <Link className="foottext">Home</Link>
+            <Link to="/Home" className="foottext">Home</Link>
             <Link className="foottext">Properties</Link>
-            <Link className="foottext">Contact</Link>
-            <Link className="foottext">About Us</Link>
+            <Link to="/ContactUs" className="foottext">Contact Us</Link>
+            <Link to="/AboutUs" className="foottext">About Us</Link>
           </div>
         </div>
       </div>

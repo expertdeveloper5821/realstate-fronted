@@ -1,0 +1,79 @@
+.live-counts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(194 237 248 / 45%);
+     padding: 30px;
+}
+
+.live-counts-box {
+    text-align: center;
+}
+.about-us-text{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 50px ;
+    height: 80vh;
+}
+
+.about-us-text {
+    font-size: 75px;
+    padding: 74px;
+}
+
+.sub-heading-about{
+    font-size: 25px;
+    font-weight:300;
+}
+.live-counts-box-heading{
+   font-size: 40px;
+   font-weight: 600;
+}
+
+@media only screen and (max-width:992px){
+    
+    
+    .live-counts-box {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .live-counts {
+       flex-direction: column;
+      
+    }
+
+  
+
+    .contentsection-div.container {
+        margin: 50px 0px;
+        padding: 20px;
+    }
+
+    p.contentSection-para {
+        text-align: justify;
+    }
+
+    .about-us-text {
+        font-size: 50px;
+     align-items: flex-start;
+    }
+
+    .box {
+        flex: 0 1 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p.contentSection-para {
+        text-align: left;
+    }
+}

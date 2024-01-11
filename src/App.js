@@ -8,6 +8,8 @@ import AddProperties from './pages/AddProperties';
 import ShowDetails from './components/showDetails/ShowDetails';
 import Properties from './pages/Properties';
 // import Properties from './pages/Properties'
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 function App() {
   return (
     <>
@@ -16,8 +18,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/AddProperties' element={<AddProperties/>}/>
+        <Route path='/AboutUs' element={<AboutUs/>}/>
         <Route path='/product/:id' element={<ShowDetails/>}/>
+        <Route path='/ContactUs' element={<ContactUs/>}/>
         <Route path='/properties' element={<Properties/>} />
+
       </Routes>
     <Footer/>
     </BrowserRouter>

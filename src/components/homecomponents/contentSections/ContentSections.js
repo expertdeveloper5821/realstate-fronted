@@ -1,14 +1,14 @@
 import React from 'react'
-import img from "../../../assets/images/pexels-pixabay-534220.jpg"
+// import img from "../../../assets/images/image-5.jpg"
 import './style.css'
 import Button from '../../button/Button'
 
-function ContentSections({ContentSectionsheading,ContentSectionspara,li1,li2,li3,text}) {
+function ContentSections({ContentSectionsheading,ContentSectionspara,li1,li2,li3,text,img}) {
   return (
-    <>
+    
     <div className='contentsection-div container'>
         <div className='contentsection-box1'>
-          <img src={img} alt='img'/>
+          <img className='constent-img' src={img} alt='img'/>
         </div>
         <div className='contentsection-box2'>
         <h2 className='contentSection-heading'>{ContentSectionsheading}</h2>
@@ -21,7 +21,7 @@ function ContentSections({ContentSectionsheading,ContentSectionspara,li1,li2,li3
         <Button text={text} className="btn-contentSection"/>
         </div>
     </div>
-    </>
+    
   )
 }
 
